@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cddbe3;
+}
+
+img {
+    border: 2px solid #aa12fa;
+    float: left;
+    margin: 20px 15px 0px 15px;
+}
+
+div {
+    margin-top: 10px;
+    font-family: Consolas;
+    font-size: 16px;
+}
+
+h1 {
+    color: #ea0a2a;
+}
+
+span {
+    color: red;
+    font-size: 18px;
+    font-family: Arial Black;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+a {
+    border: 1px solid #333;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+a:hover {
+    color: #a00;
+}
