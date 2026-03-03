@@ -1,0 +1,145 @@
+header {
+    background-color: rgb(52, 166, 233);
+    color: rgb(191, 224, 39);
+    margin: 0px;
+}
+/* body, html {
+    height: 100vh;
+} */
+body {
+    font-family: arial black;
+    margin: 0px;
+    /* background-image: url(фон.jpg); */
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+.maincontent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav {
+    background-color: rgb(126, 180, 224);
+    flex-grow: 1;
+    display: flex;
+}
+main {
+    background-color: rgb(187, 216, 228);
+    padding: 10px;
+    flex-grow: 5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+li > a {
+    text-decoration: none;
+    font-size: 15px;
+    margin: 3px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.Easy {
+    background-color: rgb(7, 118, 192);
+    color: rgb(110, 171, 240);
+}
+
+.Medium {
+    background-color: rgb(200, 46, 231);
+    color: rgb(232, 146, 243);
+}
+
+.Hard {
+    background-color: rgb(223, 8, 44);
+    color: rgb(224, 129, 129);
+}
+
+.insane {
+    background-color: rgb(175, 7, 7);
+    color: rgb(240, 52, 52);
+}
+
+.Extreme {
+    background-color: rgb(107, 3, 3);
+    color: rgb(165, 8, 8);
+}
+
+footer {
+    background-color: rgb(18, 99, 192);
+}
+
+.Easy:hover{
+    background-color: rgb(114, 188, 238);
+     transition: all 0.3s;
+}
+
+.Medium:hover {
+    background-color: rgb(201, 124, 231);
+     transition: all 0.3s;
+}
+
+.Hard:hover {
+    background-color: rgb(235, 97, 97);
+     transition: all 0.3s;
+}
+
+.insane:hover {
+    background-color: rgb(236, 68, 68);
+     transition: all 0.3s;
+}
+
+.Extreme:hover {
+    background-color: rgb(233, 41, 41);
+    transition: all 0.3s;
+}
+
+img {
+    height: 120px;
+    width: 200px;
+    left: 1650px;
+    animation: demons 20s infinite;
+    position: absolute;
+}
+
+@keyframes demons {
+    0% {top: 45px;}
+    50% {top: 750px;}
+    100% {top:45px}
+}
+
+@media screen and (max-width: 1000px)  {
+       ul {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    li > a {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 935px) {
+     a {
+        padding: 10px;
+        margin: 1px;
+        font: 5px;
+        gap: 3px;
+        display: block;
+    }
+}

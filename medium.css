@@ -1,0 +1,149 @@
+header {
+    background-color: rgb(220, 38, 226);
+    color: rgb(168, 30, 202);
+    margin: 0px;
+}
+body, html {
+    height: 100vh;
+}
+body {
+    font-family: arial black;
+    color: rgb(228, 179, 233);
+    margin: 0px;
+    background-image: url(фон.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+.maincontent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav {
+    background-color: rgb(222, 147, 236);
+    flex-grow: 1;
+    display: flex;
+}
+main {
+    background-color: rgb(208, 124, 219);
+    padding: 10px;
+    flex-grow: 5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+li > a {
+    text-decoration: none;
+    font-size: 15px;
+    margin: 3px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgb(210, 37, 216);
+}
+
+.main {
+    background-color: rgb(128, 132, 134);
+    color: rgb(42, 43, 44);
+}
+
+.Easy {
+    background-color: rgb(7, 118, 192);
+    color: rgb(110, 171, 240);
+}
+
+.Hard {
+    background-color: rgb(223, 8, 44);
+    color: rgb(224, 129, 129);
+}
+
+.insane {
+    background-color: rgb(175, 7, 7);
+    color: rgb(240, 52, 52);
+}
+
+.Extreme {
+    background-color: rgb(107, 3, 3);
+    color: rgb(165, 8, 8);
+}
+
+footer {
+    background-color: rgb(212, 43, 228);
+}
+
+.main:hover{
+    background-color: rgb(55, 71, 82);
+     transition: all 0.3s;
+}
+
+.Easy:hover{
+    background-color: rgb(114, 188, 238);
+     transition: all 0.3s;
+}
+
+.Hard:hover {
+    background-color: rgb(235, 97, 97);
+     transition: all 0.3s;
+}
+
+.insane:hover {
+    background-color: rgb(236, 68, 68);
+     transition: all 0.3s;
+}
+
+.Extreme:hover {
+    background-color: rgb(233, 41, 41);
+    transition: all 0.3s;
+}
+
+img {
+    height: 120px;
+    width: 200px;
+    left: 1650px;
+    animation: demons 20s infinite;
+    position: absolute;
+}
+
+@keyframes demons {
+    0% {top: 45px;}
+    50% {top: 750px;}
+    100% {top:45px}
+}
+
+@media (max-width: 1430px) {
+       ul {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    li > a {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 935px) {
+     a {
+        padding: 10px;
+        margin: 1px;
+        font: 5px;
+        gap: 3px;
+        display: block;
+    }
+}
